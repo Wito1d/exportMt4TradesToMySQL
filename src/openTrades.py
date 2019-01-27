@@ -35,9 +35,7 @@ for tr in tr_set:
         )
         time, trade_type, volume, symbol, price = parse_open_trade(tr)
         # print(query, time[:-5], trade_type, volume, symbol, str(float(price)))
-        cursor.execute(
-            query, (time[:-5], trade_type, volume, symbol, str(float(price)))
-        )
+        cursor.execute(query, (time[:-5], trade_type, volume, symbol, price))
 
         i = 0
         # checking number of returned DB rows was not working
