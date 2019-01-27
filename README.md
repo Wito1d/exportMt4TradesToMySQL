@@ -3,5 +3,8 @@ Python helper tool for maintaining trading journal. The tool exports open and cl
 
 Needed libs:
 pip3 install requests;
+
 pip3 install mysql-connector-python;
+
 pip3 install bs4;
+
